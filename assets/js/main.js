@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
         subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
       };
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://site--formulaire-back--67k4ycyfnl9b.code.run/form",
+        data
+      );
       console.log(response);
     });
 });
